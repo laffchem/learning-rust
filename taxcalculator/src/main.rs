@@ -12,6 +12,8 @@ fn main() {
     let monthly_home_insurance = home_insurance / 12.0;
     let monthly_hoa = 103.00;
     let total_monthly_payment = principal_interest + taxes + monthly_home_insurance + monthly_hoa;
+    let monthly_no_hoa: f64 = principal_interest + taxes + monthly_home_insurance;
+    println!("Monthly Payment without HOA: ${}", format!("{:.2}", monthly_no_hoa));
     println!("Total Monthly Payment (PITI): ${}", format!("{:.2}", total_monthly_payment));
 
 }
