@@ -2,9 +2,9 @@
 fn main() {
     let jv_old = 382_947.00;
     let av_old = 275_140.00;
-    let jv_new = 509_660.00;
-    let loan_amount = 509_660.00;
-    let interest_rate = 4.75;
+    let jv_new = 527_660.00;
+    let loan_amount = 527_660.00;
+    let interest_rate = 4.99;
     let loan_term_years = 30.0;
     let home_insurance = 1800.00;
     let principal_interest = principal_interest_calculator(loan_amount, interest_rate, loan_term_years);
