@@ -2,8 +2,8 @@
 fn main() {
     let jv_old = 382_947.00;
     let av_old = 275_140.00;
-    let jv_new = 527_660.00;
-    let loan_amount = 527_660.00;
+    let jv_new = 514_990.00;
+    let loan_amount = 514_990.00;
     let interest_rate = 4.99;
     let loan_term_years = 30.0;
     let home_insurance = 1800.00;
@@ -21,7 +21,7 @@ fn main() {
 fn portability_calculator(jv_old: f64, av_old: f64, jv_new: f64 ) -> f64 {
     let soh_diff = jv_old - av_old;
     let port_amount = f64::min(soh_diff, 500000.00);
-    let tax_rate = 18.7725;
+    let tax_rate = 14.0625;
     let homestead_exemption = 55000.00;
     if jv_new >= jv_old {
         println!("Portability Amount: {}", port_amount);
