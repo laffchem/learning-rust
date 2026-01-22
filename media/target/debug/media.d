@@ -1,1 +1,1 @@
-/home/laff/code/learning-rust/media/target/debug/media: /home/laff/code/learning-rust/media/src/main.rs
+/home/laff/code/learning-rust/media/target/debug/media: /home/laff/code/learning-rust/media/src/content/catalog.rs /home/laff/code/learning-rust/media/src/content/media.rs /home/laff/code/learning-rust/media/src/content/mod.rs /home/laff/code/learning-rust/media/src/main.rs

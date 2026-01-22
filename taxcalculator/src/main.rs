@@ -2,15 +2,15 @@
 fn main() {
     let jv_old = 382_947.00;
     let av_old = 275_140.00;
-    let jv_new = 514_990.00;
-    let loan_amount = 514_990.00;
+    let jv_new = 550_000.00;
+    let loan_amount = 550_000.00;
     let interest_rate = 4.99;
     let loan_term_years = 30.0;
     let home_insurance = 1800.00;
     let principal_interest = principal_interest_calculator(loan_amount, interest_rate, loan_term_years);
     let taxes = portability_calculator(jv_old, av_old, jv_new);
     let monthly_home_insurance = home_insurance / 12.0;
-    let monthly_hoa = 103.00;
+    let monthly_hoa = 138.00;
     let total_monthly_payment = principal_interest + taxes + monthly_home_insurance + monthly_hoa;
     let monthly_no_hoa: f64 = principal_interest + taxes + monthly_home_insurance;
     println!("Monthly Payment without HOA: ${}", format!("{:.2}", monthly_no_hoa));
@@ -21,7 +21,7 @@ fn main() {
 fn portability_calculator(jv_old: f64, av_old: f64, jv_new: f64 ) -> f64 {
     let soh_diff = jv_old - av_old;
     let port_amount = f64::min(soh_diff, 500000.00);
-    let tax_rate = 14.0625;
+    let tax_rate = 16.0625;
     let homestead_exemption = 55000.00;
     if jv_new >= jv_old {
         println!("Portability Amount: {}", port_amount);
