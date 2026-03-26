@@ -2,11 +2,11 @@
 fn main() {
     let jv_old = 382_947.00;
     let av_old = 275_140.00;
-    let jv_new = 505_000.00;
-    let loan_amount: f64 = 505_000.00;
+    let jv_new = 529_000.00;
+    let loan_amount: f64 = 529_000.00;
     let interest_rate = 4.75;
     let loan_term_years = 30.0;
-    let home_insurance = 1800.00;
+    let home_insurance = 1500.00;
     let principal_interest = principal_interest_calculator(loan_amount, interest_rate, loan_term_years);
     let taxes = portability_calculator(jv_old, av_old, jv_new);
     let monthly_home_insurance = home_insurance / 12.0;
